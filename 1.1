@@ -1,1 +1,21 @@
+package work2;
+//Реализуйте метод, принимающий в качестве аргумента целочисленный массив, 
+// суммирующий все элементы,значение которых больше 5, 
+// и печатающий полученную сумму в консоль.
+public class work1 {
+    public static void main(String[] args) {
+        int[] numbers = {1, -6, 3, -8, 6, -10, -4};
+        sumAndPrint(numbers);
+    }
+
+    public static void sumAndPrint(int[] array) {
+        int sum = 0;
+        for (int num : array) {
+            if (num > 5) {
+                sum += num;
+            }
+        }
+        System.out.println("Сумма элементов больше 5 равна : " + sum);
+    }
+}
 
